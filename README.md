@@ -215,6 +215,80 @@ stages:
         packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
 ```
 
+## What is template in ADO YAML
+
+Template in general helps to cerate some sharable content can be used by many team or in Many project.
+
+
+With the help of Template we can define sharable content, logic and parameters in YAML pipeline.
+
+## Why ADO YAML template
+
+- Speed up development
+- secure pipeline
+- cleaner yaml pipeline
+- avoid same logic to add in multiple place 
+
+Types of templates
+
+1. Include --> insert reusable control
+
+2. Extends --> Insert what is allowed. define logic that other template file follow.
+
+### Templates category
+
+- stage template
+- job template
+- step template
+- variable template
+
+### step template syntax
+
+Now lets understand how we can create step template and how it can be referred from another yaml pipeline file.
+
+step template helps to group all the steps that can be sharable in many jobs or stages.
+
+### job template syntax
+
+job template helps to group all the Jobs that can be sharable in many jobs and stages.
+
+### stage template syntax
+
+stage template helps to group all the stages that can be sharable reference in many master pipeline.
+
+### variable template syntax
+
+variable template helps to group all the variables that can be referenced in pipeline.
+
+## Create template with parameters
+
+In some scenario you are required to pass some parameters to the template. We can create parameters with all types of template like step, stage, jobs, variables.
+
+
+In this case we need to declare and define the parameters in two files.
+
+1. In template file 
+2. the file from which template file is being called.
+
+example:
+
+### Job Template with parameters example
+
+### Steps Template with parameters example
+
+### Variables Template with parameters example
+
+## Real Scenario example
+
+Lets assume you want to setup of CI/CD pipeline for an Application and to better manager the pipeline you want to make use of template.
+
+Items:
+
+1. master pipeline
+2. stage template
+3. jobs template 
+4. steps template
+
 Reference: 
 
 https://www.letsdevops.net/post/letsdevops-complete-guide-to-learn-and-setup-yaml-pipeline-in-azure-devops
