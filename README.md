@@ -91,5 +91,11 @@ stages:[stage| templateReference ]
     steps:[script | task | templateReference ]
 ```
 
-## Important Note:-
+### Important Note:-
+
+1. In some cases if there is only one stage required for pipeline we can omit stage keyword and can directly start from Jobs.
+ 
+2. In some build setup where only one agent is required for pipeline in that case we can omit Job and directly define the Steps. 
+
+
 
