@@ -242,23 +242,36 @@ Types of templates
 - step template
 - variable template
 
+  ![image](https://github.com/divyanshursahu/AzureDevOps/assets/96013623/82505c5f-f149-4c4f-af81-c04c2132eba0)
+
 ### step template syntax
 
 Now lets understand how we can create step template and how it can be referred from another yaml pipeline file.
 
 step template helps to group all the steps that can be sharable in many jobs or stages.
+![image](https://github.com/divyanshursahu/AzureDevOps/assets/96013623/0efd259f-d5e5-450c-b699-570003db35dc)
+
 
 ### job template syntax
 
 job template helps to group all the Jobs that can be sharable in many jobs and stages.
 
+![image](https://github.com/divyanshursahu/AzureDevOps/assets/96013623/41495bed-d772-4c18-ba55-3ebcc88b19a2)
+
+
 ### stage template syntax
 
 stage template helps to group all the stages that can be sharable reference in many master pipeline.
 
+![image](https://github.com/divyanshursahu/AzureDevOps/assets/96013623/a5c811c3-ed84-4f9f-975f-5153399b07dd)
+
+
 ### variable template syntax
 
 variable template helps to group all the variables that can be referenced in pipeline.
+
+![image](https://github.com/divyanshursahu/AzureDevOps/assets/96013623/bf37663b-20d0-4b35-a510-4d8dbc3d5150)
+
 
 ## Create template with parameters
 
@@ -274,11 +287,20 @@ example:
 
 ### Job Template with parameters example
 
+![image](https://github.com/divyanshursahu/AzureDevOps/assets/96013623/a90db234-c140-49c2-ac30-304418d227d1)
+
+
 ### Steps Template with parameters example
+
+![image](https://github.com/divyanshursahu/AzureDevOps/assets/96013623/54eccfe6-226d-4c77-909a-54af20745f94)
 
 ### Variables Template with parameters example
 
+![image](https://github.com/divyanshursahu/AzureDevOps/assets/96013623/0f9464f4-0624-4cec-ab5d-e2e1714ee84a)
+
 ## Real Scenario example
+
+![image](https://github.com/divyanshursahu/AzureDevOps/assets/96013623/2839c655-159c-4ff6-871b-1eb4cb3e2d34)
 
 Lets assume you want to setup of CI/CD pipeline for an Application and to better manager the pipeline you want to make use of template.
 
@@ -291,4 +313,6 @@ Items:
 
 Reference: 
 
-https://www.letsdevops.net/post/letsdevops-complete-guide-to-learn-and-setup-yaml-pipeline-in-azure-devops
+[complete-guide-to-learn-and-setup-yaml-pipeline-in-azure-devops](https://www.letsdevops.net/post/letsdevops-complete-guide-to-learn-and-setup-yaml-pipeline-in-azure-devops)
+
+[templates-how-and-when-to-create-template-with-real-scenario-example](https://www.letsdevops.net/post/letsdevops-azure-devops-yaml-templates-how-and-when-to-create-template-with-real-scenario-example)
