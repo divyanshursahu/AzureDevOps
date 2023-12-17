@@ -1,0 +1,36 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+# This is a Simple Step pipeline
+
+# First thing in a pipeline is trigger
+# You can mention none or branches, tags, feature branches.
+# trigger: none -- if no trigger
+trigger: 
+- main
+
+# Then it's the agent pool where you want to run the build. Below is a azure agent pool
+pool:
+  vmImage: ubuntu-latest
+
+# then below you can mention the task you want to run in a build pipeline
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+    touch text.txt
+  displayName: 'Run a multi-line script'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+    StoreAsTar: true
+
